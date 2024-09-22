@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size: 16px;
+            --padding: 10px;
+        }
+
+        body {
+            font-size: var(--font-size);
+            color: var(--primary-color);
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            padding: var(--padding);
+        }
+
+        .box {
+            border: 2px solid var(--primary-color);
+            padding: var(--padding);
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables Example</h1>
+    <p>This paragraph uses the primary color.</p>
+    <div class="box">This box uses CSS variables for styling.</div>
+</body>
+</html>

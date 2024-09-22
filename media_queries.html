@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .container {
+                font-size: 12px;
+            }
+        }
+
+        /* Tablet styles */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            .container {
+                font-size: 16px;
+            }
+        }
+
+        /* Desktop styles */
+        @media (min-width: 901px) {
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+
+            .container {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Design Example</h1>
+        <p>This page adjusts based on screen size.</p>
+    </div>
+</body>
+</html>
